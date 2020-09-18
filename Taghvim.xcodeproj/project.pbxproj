@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE82FBE62513525B000599AF /* TaghvimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FBE52513525B000599AF /* TaghvimApp.swift */; };
+		DE82FBE82513525B000599AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FBE72513525B000599AF /* ContentView.swift */; };
+		DE82FBEA2513525C000599AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE82FBE92513525C000599AF /* Assets.xcassets */; };
+		DE82FBED2513525C000599AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE82FBEC2513525C000599AF /* Preview Assets.xcassets */; };
+		DE82FBF82513525C000599AF /* TaghvimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FBF72513525C000599AF /* TaghvimTests.swift */; };
+		DE82FC032513525C000599AF /* TaghvimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC022513525C000599AF /* TaghvimUITests.swift */; };
+		DE82FC14251358DC000599AF /* Samim-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE82FC13251358DC000599AF /* Samim-FD.ttf */; };
+		DE82FC1D25136977000599AF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC1C25136977000599AF /* Font.swift */; };
+		DE82FC2225136994000599AF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC2125136994000599AF /* DateFormatter.swift */; };
+		DE82FC2725136A46000599AF /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC2625136A46000599AF /* DateView.swift */; };
+		DE82FC3225136A96000599AF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE82FC3125136A96000599AF /* WidgetKit.framework */; };
+		DE82FC3425136A96000599AF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE82FC3325136A96000599AF /* SwiftUI.framework */; };
+		DE82FC3725136A96000599AF /* TaghvimWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC3625136A96000599AF /* TaghvimWidget.swift */; };
+		DE82FC3925136A98000599AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE82FC3825136A98000599AF /* Assets.xcassets */; };
+		DE82FC3D25136A98000599AF /* TaghvimWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE82FC2F25136A96000599AF /* TaghvimWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE82FC4625136AA2000599AF /* Samim-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE82FC13251358DC000599AF /* Samim-FD.ttf */; };
+		DE82FC4B25136AA6000599AF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC1C25136977000599AF /* Font.swift */; };
+		DE82FC5025136AA9000599AF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC2125136994000599AF /* DateFormatter.swift */; };
+		DE82FC5525136AAB000599AF /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE82FC2625136A46000599AF /* DateView.swift */; };
+		DE82FC5F251375AD000599AF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE82FC5E251375AD000599AF /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE82FBF42513525C000599AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE82FBDA2513525B000599AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE82FBE12513525B000599AF;
+			remoteInfo = Taghvim;
+		};
+		DE82FBFF2513525C000599AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE82FBDA2513525B000599AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE82FBE12513525B000599AF;
+			remoteInfo = Taghvim;
+		};
+		DE82FC3B25136A98000599AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE82FBDA2513525B000599AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE82FC2E25136A96000599AF;
+			remoteInfo = TaghvimWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE82FC4125136A98000599AF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE82FC3D25136A98000599AF /* TaghvimWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE82FBE22513525B000599AF /* Taghvim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taghvim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE82FBE52513525B000599AF /* TaghvimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaghvimApp.swift; sourceTree = "<group>"; };
+		DE82FBE72513525B000599AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE82FBE92513525C000599AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE82FBEC2513525C000599AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE82FBEE2513525C000599AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE82FBF32513525C000599AF /* TaghvimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaghvimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE82FBF72513525C000599AF /* TaghvimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaghvimTests.swift; sourceTree = "<group>"; };
+		DE82FBF92513525C000599AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE82FBFE2513525C000599AF /* TaghvimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaghvimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE82FC022513525C000599AF /* TaghvimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaghvimUITests.swift; sourceTree = "<group>"; };
+		DE82FC042513525C000599AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE82FC13251358DC000599AF /* Samim-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Samim-FD.ttf"; sourceTree = "<group>"; };
+		DE82FC1C25136977000599AF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		DE82FC2125136994000599AF /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		DE82FC2625136A46000599AF /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		DE82FC2F25136A96000599AF /* TaghvimWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TaghvimWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE82FC3125136A96000599AF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DE82FC3325136A96000599AF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DE82FC3625136A96000599AF /* TaghvimWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaghvimWidget.swift; sourceTree = "<group>"; };
+		DE82FC3825136A98000599AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE82FC3A25136A98000599AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE82FC5E251375AD000599AF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE82FBDF2513525B000599AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FBF02513525C000599AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FBFB2513525C000599AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FC2C25136A96000599AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE82FC3425136A96000599AF /* SwiftUI.framework in Frameworks */,
+				DE82FC3225136A96000599AF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE82FBD92513525B000599AF = {
+			isa = PBXGroup;
+			children = (
+				DE82FBE42513525B000599AF /* Taghvim */,
+				DE82FBF62513525C000599AF /* TaghvimTests */,
+				DE82FC012513525C000599AF /* TaghvimUITests */,
+				DE82FC3525136A96000599AF /* TaghvimWidget */,
+				DE82FC3025136A96000599AF /* Frameworks */,
+				DE82FBE32513525B000599AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE82FBE32513525B000599AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FBE22513525B000599AF /* Taghvim.app */,
+				DE82FBF32513525C000599AF /* TaghvimTests.xctest */,
+				DE82FBFE2513525C000599AF /* TaghvimUITests.xctest */,
+				DE82FC2F25136A96000599AF /* TaghvimWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE82FBE42513525B000599AF /* Taghvim */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FC5E251375AD000599AF /* Launch Screen.storyboard */,
+				DE82FC18251358E0000599AF /* Fonts */,
+				DE82FBE52513525B000599AF /* TaghvimApp.swift */,
+				DE82FBE72513525B000599AF /* ContentView.swift */,
+				DE82FBE92513525C000599AF /* Assets.xcassets */,
+				DE82FBEE2513525C000599AF /* Info.plist */,
+				DE82FBEB2513525C000599AF /* Preview Content */,
+				DE82FC1C25136977000599AF /* Font.swift */,
+				DE82FC2125136994000599AF /* DateFormatter.swift */,
+				DE82FC2625136A46000599AF /* DateView.swift */,
+			);
+			path = Taghvim;
+			sourceTree = "<group>";
+		};
+		DE82FBEB2513525C000599AF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FBEC2513525C000599AF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE82FBF62513525C000599AF /* TaghvimTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FBF72513525C000599AF /* TaghvimTests.swift */,
+				DE82FBF92513525C000599AF /* Info.plist */,
+			);
+			path = TaghvimTests;
+			sourceTree = "<group>";
+		};
+		DE82FC012513525C000599AF /* TaghvimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FC022513525C000599AF /* TaghvimUITests.swift */,
+				DE82FC042513525C000599AF /* Info.plist */,
+			);
+			path = TaghvimUITests;
+			sourceTree = "<group>";
+		};
+		DE82FC18251358E0000599AF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FC13251358DC000599AF /* Samim-FD.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DE82FC3025136A96000599AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FC3125136A96000599AF /* WidgetKit.framework */,
+				DE82FC3325136A96000599AF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE82FC3525136A96000599AF /* TaghvimWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DE82FC3625136A96000599AF /* TaghvimWidget.swift */,
+				DE82FC3825136A98000599AF /* Assets.xcassets */,
+				DE82FC3A25136A98000599AF /* Info.plist */,
+			);
+			path = TaghvimWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE82FBE12513525B000599AF /* Taghvim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE82FC072513525C000599AF /* Build configuration list for PBXNativeTarget "Taghvim" */;
+			buildPhases = (
+				DE82FBDE2513525B000599AF /* Sources */,
+				DE82FBDF2513525B000599AF /* Frameworks */,
+				DE82FBE02513525B000599AF /* Resources */,
+				DE82FC4125136A98000599AF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE82FC3C25136A98000599AF /* PBXTargetDependency */,
+			);
+			name = Taghvim;
+			productName = Taghvim;
+			productReference = DE82FBE22513525B000599AF /* Taghvim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE82FBF22513525C000599AF /* TaghvimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE82FC0A2513525C000599AF /* Build configuration list for PBXNativeTarget "TaghvimTests" */;
+			buildPhases = (
+				DE82FBEF2513525C000599AF /* Sources */,
+				DE82FBF02513525C000599AF /* Frameworks */,
+				DE82FBF12513525C000599AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE82FBF52513525C000599AF /* PBXTargetDependency */,
+			);
+			name = TaghvimTests;
+			productName = TaghvimTests;
+			productReference = DE82FBF32513525C000599AF /* TaghvimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE82FBFD2513525C000599AF /* TaghvimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE82FC0D2513525C000599AF /* Build configuration list for PBXNativeTarget "TaghvimUITests" */;
+			buildPhases = (
+				DE82FBFA2513525C000599AF /* Sources */,
+				DE82FBFB2513525C000599AF /* Frameworks */,
+				DE82FBFC2513525C000599AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE82FC002513525C000599AF /* PBXTargetDependency */,
+			);
+			name = TaghvimUITests;
+			productName = TaghvimUITests;
+			productReference = DE82FBFE2513525C000599AF /* TaghvimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DE82FC2E25136A96000599AF /* TaghvimWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE82FC3E25136A98000599AF /* Build configuration list for PBXNativeTarget "TaghvimWidgetExtension" */;
+			buildPhases = (
+				DE82FC2B25136A96000599AF /* Sources */,
+				DE82FC2C25136A96000599AF /* Frameworks */,
+				DE82FC2D25136A96000599AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaghvimWidgetExtension;
+			productName = TaghvimWidgetExtension;
+			productReference = DE82FC2F25136A96000599AF /* TaghvimWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE82FBDA2513525B000599AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DE82FBE12513525B000599AF = {
+						CreatedOnToolsVersion = 12.0;
+						DevelopmentTeam = LE3B4L53U9;
+						ProvisioningStyle = Manual;
+					};
+					DE82FBF22513525C000599AF = {
+						CreatedOnToolsVersion = 12.0;
+						DevelopmentTeam = LE3B4L53U9;
+						ProvisioningStyle = Manual;
+						TestTargetID = DE82FBE12513525B000599AF;
+					};
+					DE82FBFD2513525C000599AF = {
+						CreatedOnToolsVersion = 12.0;
+						DevelopmentTeam = LE3B4L53U9;
+						ProvisioningStyle = Manual;
+						TestTargetID = DE82FBE12513525B000599AF;
+					};
+					DE82FC2E25136A96000599AF = {
+						CreatedOnToolsVersion = 12.0;
+						DevelopmentTeam = LE3B4L53U9;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = DE82FBDD2513525B000599AF /* Build configuration list for PBXProject "Taghvim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE82FBD92513525B000599AF;
+			productRefGroup = DE82FBE32513525B000599AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE82FBE12513525B000599AF /* Taghvim */,
+				DE82FBF22513525C000599AF /* TaghvimTests */,
+				DE82FBFD2513525C000599AF /* TaghvimUITests */,
+				DE82FC2E25136A96000599AF /* TaghvimWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE82FBE02513525B000599AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE82FC14251358DC000599AF /* Samim-FD.ttf in Resources */,
+				DE82FBED2513525C000599AF /* Preview Assets.xcassets in Resources */,
+				DE82FC5F251375AD000599AF /* Launch Screen.storyboard in Resources */,
+				DE82FBEA2513525C000599AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FBF12513525C000599AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FBFC2513525C000599AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FC2D25136A96000599AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE82FC4625136AA2000599AF /* Samim-FD.ttf in Resources */,
+				DE82FC3925136A98000599AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE82FBDE2513525B000599AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE82FC2725136A46000599AF /* DateView.swift in Sources */,
+				DE82FC2225136994000599AF /* DateFormatter.swift in Sources */,
+				DE82FBE82513525B000599AF /* ContentView.swift in Sources */,
+				DE82FBE62513525B000599AF /* TaghvimApp.swift in Sources */,
+				DE82FC1D25136977000599AF /* Font.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FBEF2513525C000599AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE82FBF82513525C000599AF /* TaghvimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FBFA2513525C000599AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE82FC032513525C000599AF /* TaghvimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE82FC2B25136A96000599AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE82FC5025136AA9000599AF /* DateFormatter.swift in Sources */,
+				DE82FC4B25136AA6000599AF /* Font.swift in Sources */,
+				DE82FC5525136AAB000599AF /* DateView.swift in Sources */,
+				DE82FC3725136A96000599AF /* TaghvimWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE82FBF52513525C000599AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE82FBE12513525B000599AF /* Taghvim */;
+			targetProxy = DE82FBF42513525C000599AF /* PBXContainerItemProxy */;
+		};
+		DE82FC002513525C000599AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE82FBE12513525B000599AF /* Taghvim */;
+			targetProxy = DE82FBFF2513525C000599AF /* PBXContainerItemProxy */;
+		};
+		DE82FC3C25136A98000599AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE82FC2E25136A96000599AF /* TaghvimWidgetExtension */;
+			targetProxy = DE82FC3B25136A98000599AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DE82FC052513525C000599AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE82FC062513525C000599AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE82FC082513525C000599AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_ASSET_PATHS = "\"Taghvim/Preview Content\"";
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Taghvim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.Taghvim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.riahipour.Taghvim";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE82FC092513525C000599AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_ASSET_PATHS = "\"Taghvim/Preview Content\"";
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Taghvim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.Taghvim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.riahipour.Taghvim";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE82FC0B2513525C000599AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				INFOPLIST_FILE = TaghvimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.TaghvimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taghvim.app/Taghvim";
+			};
+			name = Debug;
+		};
+		DE82FC0C2513525C000599AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				INFOPLIST_FILE = TaghvimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.TaghvimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taghvim.app/Taghvim";
+			};
+			name = Release;
+		};
+		DE82FC0E2513525C000599AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				INFOPLIST_FILE = TaghvimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.TaghvimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taghvim;
+			};
+			name = Debug;
+		};
+		DE82FC0F2513525C000599AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				INFOPLIST_FILE = TaghvimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.TaghvimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taghvim;
+			};
+			name = Release;
+		};
+		DE82FC3F25136A98000599AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				INFOPLIST_FILE = TaghvimWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.Taghvim.TaghvimWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.riahipour.Taghvim.TaghvimWidget";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE82FC4025136A98000599AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_TEAM = LE3B4L53U9;
+				INFOPLIST_FILE = TaghvimWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.riahipour.Taghvim.TaghvimWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.riahipour.Taghvim.TaghvimWidget";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE82FBDD2513525B000599AF /* Build configuration list for PBXProject "Taghvim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE82FC052513525C000599AF /* Debug */,
+				DE82FC062513525C000599AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE82FC072513525C000599AF /* Build configuration list for PBXNativeTarget "Taghvim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE82FC082513525C000599AF /* Debug */,
+				DE82FC092513525C000599AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE82FC0A2513525C000599AF /* Build configuration list for PBXNativeTarget "TaghvimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE82FC0B2513525C000599AF /* Debug */,
+				DE82FC0C2513525C000599AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE82FC0D2513525C000599AF /* Build configuration list for PBXNativeTarget "TaghvimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE82FC0E2513525C000599AF /* Debug */,
+				DE82FC0F2513525C000599AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE82FC3E25136A98000599AF /* Build configuration list for PBXNativeTarget "TaghvimWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE82FC3F25136A98000599AF /* Debug */,
+				DE82FC4025136A98000599AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE82FBDA2513525B000599AF /* Project object */;
+}

@@ -1,0 +1,50 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do |options|
+    setup_project
+    api_key = app_store_connect_api_key(
+      key_id: "P9FDYTS35L",
+      issuer_id: "2da6365e-5444-4603-aa82-dbba79babb7f",
+      key_content: ENV["API_KEY"],
+      duration: 1200,
+      in_house: false,
+    )
+    match(git_basic_authorization: options[:CI_TOKEN], readonly: is_ci, keychain_name: "actiontest_keychain", keychain_password: "meow")
+    increment_build_number(build_number: options[:GITHUB_RUN_NUMBER], xcodeproj: "Taghvim.xcodeproj")
+    build_app(scheme: "Taghvim")
+    upload_to_testflight(api_key: api_key, skip_waiting_for_build_processing: true)
+  end
+  
+  private_lane :setup_project do
+    create_keychain(
+      name: "actiontest_keychain",
+      password: "meow",
+      default_keychain: true,
+      unlock: true,
+      timeout: 3600,
+      lock_when_sleeps: false
+    )
+  end
+
+  desc "Run tests"
+  lane :test do
+    run_tests(scheme: "Taghvim")
+  end
+end
