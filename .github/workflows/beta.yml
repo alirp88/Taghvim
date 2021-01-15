@@ -3,6 +3,8 @@ name: Beta
 on:
   push:
     branches: [ main ]
+  schedule: 
+    - cron: '0 0 16 * *'
 
 jobs:
   Swiftlint: 
