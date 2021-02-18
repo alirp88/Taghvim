@@ -20,12 +20,14 @@ struct Provider: TimelineProvider {
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
         var entries: [SimpleEntry] = []
-
+        let calendar = Calendar.current
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .day, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
+
+        entries.append(.init(date: currentDate))
+        for dayOffset in 1..<5 {
+            let entryDate = calendar.startOfDay(for: calendar.date(byAdding: .day, value: dayOffset, to: currentDate)!)
+
+            entries.append(.init(date: entryDate))
         }
 
         let timeline = Timeline(entries: entries, policy: .atEnd)
